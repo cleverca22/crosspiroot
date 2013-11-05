@@ -1,3 +1,7 @@
+these scripts allow you to chroot into a raspberry pi image
+it lets you do things like apt-get install/update/upgrade without having to boot it up
+note: the gpio and gpu stuff wont work
+
 step 1, run the setup script for your distro
 step 2, run prepare
 
