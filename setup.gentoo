@@ -1,0 +1,8 @@
+#!/bin/bash
+echo 'QEMU_USER_TARGETS="arm"' >> /etc/portage/make.conf
+echo 'app-emulation/qemu static-user' >> /etc/portage/package.use
+echo 'sys-libs/zlib static-libs' >> /etc/portage/package.use
+echo 'dev-libs/glib static-libs' >> /etc/portage/package.use
+emerge -avu --newuse zlib glib qemu-user
+rc-update add qemu-binfmt boot
+/etc/init.d/qemu-binfmt start

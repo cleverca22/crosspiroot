@@ -1,0 +1,3 @@
+#!/bin/bash
+wget http://downloads.raspberrypi.org/raspbian/images/raspbian-2013-10-07/2013-09-25-wheezy-raspbian.zip
+unzip 2013-09-25-wheezy-raspbian.zip

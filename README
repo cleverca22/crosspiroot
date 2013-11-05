@@ -1,0 +1,6 @@
+step 1, run the setup script for your distro
+step 2, run prepare
+
+each time you want to use it, run start, enter, then stop
+
+you can run enter several times from different shells

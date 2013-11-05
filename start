@@ -1,0 +1,11 @@
+#!/bin/bash -x
+mkdir /mnt/rpi/
+mount 2013-09-25-wheezy-raspbian.img -o loop,offset=$((122880*512)),rw /mnt/rpi/
+mount 2013-09-25-wheezy-raspbian.img -o loop,offset=$((8192*512)),rw /mnt/rpi/boot/
+function doit () {
+	mount --bind /$1 $1/
+}
+cd /mnt/rpi/
+for x in dev proc sys dev/pts
+	do doit $x
+done

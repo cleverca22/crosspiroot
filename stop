@@ -1,0 +1,4 @@
+cd /mnt/rpi/
+umount dev/pts sys proc dev boot
+cd
+umount /mnt/rpi

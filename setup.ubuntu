@@ -1,0 +1,3 @@
+# untested, taken from https://wiki.debian.org/QemuUserEmulation
+apt-get install qemu binfmt-support qemu-user-static
+
