@@ -1,5 +1,5 @@
-#!/bin/bash -x
-mkdir /mnt/rpi/
+#!/bin/bash -e
+mkdir /mnt/rpi/ || true
 mount 2013-09-25-wheezy-raspbian.img -o loop,offset=$((122880*512)),rw /mnt/rpi/
 mount 2013-09-25-wheezy-raspbian.img -o loop,offset=$((8192*512)),rw /mnt/rpi/boot/
 cp -vi /usr/bin/qemu-static-arm-binfmt usr/bin/
