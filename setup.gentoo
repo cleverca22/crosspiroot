@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 echo 'QEMU_USER_TARGETS="arm"' >> /etc/portage/make.conf
 echo 'app-emulation/qemu static-user' >> /etc/portage/package.use
 echo 'sys-libs/zlib static-libs' >> /etc/portage/package.use
